@@ -1,0 +1,198 @@
+#mainNav .brand span {
+  display: inline-block;
+  text-indent: -9000px;
+  width: 121px;
+  height: 30px;
+  background: url(https://d2fizce7baxuhy.cloudfront.net/images/pocket_logo_help_scout_white.png?v=2)
+    no-repeat 0 0;
+  background-size: 100%;
+}
+
+#docsSearch h1 {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.most-pop-articles h2 {
+  font-weight: 200;
+}
+
+#searchBar button {
+  background-color: #50bcb6;
+  border: 1px solid #50bcb6;
+}
+
+#searchBar button:hover {
+  background: #44a09b;
+}
+
+.navbar .nav li a,
+.navbar .icon-private-w {
+  color: #808285;
+}
+
+.navbar .brand,
+.navbar .nav li a:hover,
+.navbar .nav li a:focus,
+.navbar .nav .active a,
+.navbar .nav .active a:hover,
+.navbar .nav .active a:focus {
+  color: #b4b5b7;
+}
+
+#contactModal h2 {
+  background-color: #fff;
+}
+
+/* Removing since this was causing a lightbox UI bug with the cose button
+[class^=icon-], [class*=" icon-"], .featherlight-close-icon {
+    color: #fff;
+}
+*/
+
+body {
+  background-color: #fff;
+}
+.navbar .navbar-inner {
+  background-color: #444;
+}
+.navbar .nav li a,
+.navbar .icon-private-w {
+  color: #ccc;
+}
+.navbar .brand,
+.navbar .nav li a:hover,
+.navbar .nav li a:focus,
+.navbar .nav .active a,
+.navbar .nav .active a:hover,
+.navbar .nav .active a:focus {
+  color: #999;
+}
+.navbar .nav .active .caret {
+  display: none;
+}
+#docsSearch {
+  background: #444;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 3em;
+  padding: 1.5em 0 4.5em;
+}
+#docsSearch h1 {
+  color: #f7f7f7;
+  font-size: 32px;
+  font-weight: 200;
+}
+#searchBar button {
+  background-color: #ef4056;
+  border: 1px solid #ef4056;
+}
+
+#searchBar button:hover {
+  background-color: #ef4056;
+  border: 1px solid #ef4056;
+}
+.most-pop-articles h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1em;
+  color: #50bcb6;
+}
+.most-pop-articles .popArticles li {
+  list-style-type: disc;
+  color: #50bcb6;
+}
+.most-pop-articles .popArticles .icon-article-doc {
+  display: none;
+}
+.most-pop-articles .popArticles li a {
+  color: #444;
+  padding-left: 20px;
+}
+.pkt_collection_heading {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1em;
+  margin: 60px 0.8% 30px;
+  color: #50bcb6;
+}
+.category-list .category {
+  background-color: #fff;
+}
+
+/* Inner Pages */
+
+#searchBar.sm button .icon-search {
+  color: #999;
+}
+
+.navbar .navbar-inner {
+  box-shadow: none;
+}
+#sidebar h3 {
+  color: #777;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+#sidebar .nav-list a {
+  color: #777;
+}
+
+/* Category */
+/*
+#categoryHead h1{
+    font-size:16px;
+    font-weight:400;
+    color:#999;
+}
+#categoryHead .descrip{
+    font-size:32px;
+    font-weight:500;
+    color:#222;
+    padding-right:145px;
+    line-height:1.25;
+    margin-bottom:2em;
+}
+*/
+.contentWrapper .articleList a {
+  color: #222;
+  font-size: 16px;
+}
+.contentWrapper .articleList .icon-article-doc:before {
+  color: #50bcb6;
+}
+
+/* IN THIS ARTICLE section from Help Scout */
+
+#fullArticle .index-list {
+  margin-bottom: 2.5em;
+  border-left: 5px solid #aaaeb7;
+}
+#fullArticle .index-list h4 {
+  display: block;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 8px 26px 0;
+  font-size: 1em;
+  font-weight: 600;
+}
+#fullArticle .index-list ul {
+  list-style: none;
+  margin: 1em 25px 0em;
+  float: left;
+}
+#fullArticle .index-list li {
+  float: left;
+  width: 305px;
+}
+#fullArticle .index-list:before,
+#fullArticle .index-list:after {
+  display: table;
+  content: "";
+  /* Fixes Opera/contenteditable bug:
+      /* http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952 */
+  line-height: 0;
+}
+#fullArticle .index-list:after {
+  clear: both;
+}

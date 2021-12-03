@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Blanco OSF;
+  src: url("https://assets.getpocket.com/web-ui/assets/BlancoOSFWeb-Regular.801a4e20a7d0a0d7920f60e192e46c48.woff"),
+    url("https://assets.getpocket.com/web-ui/assets/BlancoOSFWeb-Regular.7d5a8216b7607638e81feb748552a702.woff2");
+}
+
+@font-face {
+  font-family: Doyle;
+  src: url("https://assets.getpocket.com/web-ui/assets/Doyle-Medium.c09a60519e560b51048e9efa13159e15.woff"),
+    url("https://assets.getpocket.com/web-ui/assets/Doyle-Medium.eb6ee0eb205e8467cb3b0e61191217b2.woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Graphik Web;
+  src: url("https://assets.getpocket.com/web-ui/assets/Graphik-Light-Web.da8be9aa3a2d638310d7300574c9ca4f.woff"),
+    url("https://assets.getpocket.com/web-ui/assets/Graphik-Light-Web.4389379ad479dec8e9013bda556ef683.woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Graphik Web;
+  src: url("https://assets.getpocket.com/web-ui/assets/Graphik-Regular-Web.f4517c893c366f67105eb10713c09aa8.woff"),
+    url("https://assets.getpocket.com/web-ui/assets/Graphik-Regular-Web.e05a3b2ff4a3813954bcf8bdb83f9804.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Graphik Web;
+  src: url("https://assets.getpocket.com/web-ui/assets/Graphik-Medium-Web.31a8dbe17cf69cda402e9b565d1bb595.woff"),
+    url("https://assets.getpocket.com/web-ui/assets/Graphik-Medium-Web.c28abeb53c5265642e173cb1f81e8091.woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Graphik Web;
+  src: url("https://assets.getpocket.com/web-ui/assets/Graphik-Semibold-Web.f9e768566f6ba55e507f398522df32a7.woff"),
+    url("https://assets.getpocket.com/web-ui/assets/Graphik-Semibold-Web.1e9ac78e3efd08db3b5db4380e3a1e6f.woff2");
+  font-weight: 600;
+}

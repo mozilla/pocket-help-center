@@ -1,0 +1,574 @@
+:root {
+  --brand-coral-neon: #ff6682;
+  --brand-coral: #ef4056;
+  --brand-teal-darker: #004d48;
+  --brand-teal: #008078;
+  --brand-teal-light: #95d5d2;
+  --brand-amber: #fcb643;
+  --text-primary: #1a1a1a;
+  --border-primary: 1px solid #8c8c8c;
+  --border-secondary: 1px solid #dadada;
+  --shadow-raised-canvas: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  --graphik-web: Graphik Web, proxima-nova, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  --doyle: Doyle, Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--graphik-web) !important;
+  color: var(--text-primary);
+}
+
+/* Top navigation */
+
+#mainNav .brand span {
+  display: inline-block;
+  text-indent: -9000px;
+  width: 121px;
+  height: 30px;
+  background: url("https://pocket-helpcenter.sumo.mozit.cloud/images/pocket-logo.svg")
+    no-repeat 0 0;
+  background-size: 100%;
+}
+
+.navbar .nav li a,
+.navbar .icon-private-w {
+  font-family: var(--graphik-web);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Docs search */
+
+#docsSearch {
+  background: var(--brand-coral-neon);
+  position: relative;
+  border: none;
+  margin-bottom: 40px;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#docsSearch h1 {
+  color: white;
+  font-family: var(--graphik-web);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 40px;
+  max-width: 560px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  #docsSearch {
+    height: 280px;
+    margin-bottom: 40px;
+  }
+
+  #docsSearch h1 {
+    max-width: 400px;
+    padding-top: 2em;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1899px) {
+  #docsSearch {
+    height: 400px;
+  }
+
+  #docsSearch h1 {
+    font-size: 36px;
+    padding-bottom: 24px;
+  }
+}
+
+/* Docs search / Search bar */
+
+#searchBar {
+  z-index: 2;
+}
+
+#searchBar .search-query {
+  font-family: var(--graphik-web);
+  box-shadow: none;
+  border: none;
+}
+
+#searchBar button {
+  background-color: var(--brand-coral);
+  border: 1px solid var(--brand-coral);
+  text-shadow: none;
+  font-family: var(--graphik-web);
+}
+
+#searchBar button:hover {
+  background-color: var(--brand-coral);
+}
+
+#searchBar button .icon-search {
+  color: white;
+}
+
+.navbar .btn-navbar .icon-bar {
+  background: var(--text-primary) !important;
+  box-shadow: none;
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar .btn-navbar {
+    right: 0px;
+  }
+}
+
+/* Docs search / Background images */
+
+#docsSearch::before,
+#docsSearch::after {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 1025px) {
+  #docsSearch::before {
+    background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/pocket_help_left.svg");
+    background-repeat: no-repeat;
+    content: "";
+    height: 400px;
+    position: absolute;
+    left: 5%;
+    transform: translateX(-50%);
+    width: 530px;
+    transition: left 0.2s;
+  }
+
+  #docsSearch::after {
+    background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/pocket_help_right.svg");
+    background-repeat: no-repeat;
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 95%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 515px;
+    transition: left 0.2s;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1399px) {
+  #docsSearch::before {
+    left: 6%;
+  }
+
+  #docsSearch::after {
+    left: 97%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #docsSearch::before {
+    left: 12%;
+  }
+
+  #docsSearch::after {
+    left: 89%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  #docsSearch {
+    height: 400px;
+  }
+
+  #docsSearch::before {
+    left: 18%;
+    width: 580px;
+  }
+
+  #docsSearch::after {
+    left: 84%;
+    width: 580px;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  #docsSearch::before {
+    left: 30%;
+  }
+
+  #docsSearch::after {
+    left: 73%;
+  }
+}
+
+/* Most popular articles */
+
+.most-pop-articles {
+  max-width: 1080px;
+  width: 100%;
+}
+
+.most-pop-articles h2,
+.pkt_collection_heading {
+  color: var(--text-primary);
+  font-family: var(--doyle);
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: left;
+  margin: 48px 0.8% 24px;
+}
+
+.most-pop-articles h2 {
+  margin-top: 0px;
+}
+
+.most-pop-articles.two-col .popArticles a {
+  padding: 0px;
+  color: var(--text-primary);
+}
+
+.most-pop-articles.two-col .popArticles a:hover span {
+  text-decoration: none;
+}
+
+.most-pop-articles.two-col .popArticles {
+  margin-left: 29px;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .most-pop-articles.two-col .popArticles {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .most-pop-articles.two-col .popArticles {
+    width: 47%;
+  }
+}
+
+.most-pop-articles .popArticles li {
+  list-style-type: none;
+  display: flex;
+}
+
+.most-pop-articles .popArticles li::before {
+  content: "\25AA";
+  color: var(--brand-teal-light);
+  padding-right: 10px;
+  font-size: 30px;
+  font-style: normal;
+  margin-right: -20px;
+  position: relative;
+  top: 2px;
+  right: 20px;
+}
+
+.most-pop-articles .popArticles li:nth-child(3n)::before {
+  color: var(--brand-coral);
+}
+
+.most-pop-articles .popArticles li:nth-child(3n + 1)::before {
+  color: var(--brand-amber);
+}
+
+.most-pop-articles .popArticles .icon-article-doc {
+  display: none;
+}
+
+.sep {
+  display: none;
+}
+
+/* Categories */
+
+.category-list .category {
+  background-color: #fff;
+  border: 1px solid #e0e0e6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 145px 50px 40px;
+  min-height: 285px;
+  transition: all 0.25s ease-in-out;
+  width: 100%;
+}
+
+.category-list .category:hover {
+  box-shadow: var(--shadow-raised-canvas);
+  background-color: #fff;
+}
+
+.category-list h3 {
+  color: var(--text-primary);
+  font-family: var(--graphik-web);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+}
+#collection-category-8 .category {
+  padding-top: 60px;
+  min-height: 190px;
+}
+.category-list .category:focus .article-count,
+.category-list .category:active .article-count {
+  color: var(--brand-teal);
+}
+
+@media screen and (max-width: 759px) {
+  .category-list .category {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1104px) {
+  .category-list .category {
+    width: calc(99% / 2 - 16px);
+  }
+
+  .category-list .category:nth-child(even) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1105px) {
+  .category-list .category {
+    width: calc(100% / 3 - 23px);
+  }
+
+  #collection-category-8 .category {
+    padding-top: 60px;
+    min-height: 190px;
+  }
+}
+
+.category-list .category p {
+  color: #7f8d9b;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+
+.category-list .category .article-count {
+  margin-bottom: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.collection-category .category-list {
+  margin-bottom: 50px;
+}
+
+.category-list.two-col .category {
+  min-height: 240px;
+  width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .category-list.two-col .category {
+    width: calc(100% / 3 - 23px);
+  }
+}
+
+.category-list.two-col .category:last-child {
+  margin-right: 0;
+}
+
+.category-list .category,
+.category-list .category:hover {
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: 80px 80px;
+}
+
+.category-list .category:nth-of-type(7n + 1) {
+  background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/carrot.svg");
+}
+
+.category-list .category:nth-of-type(7n + 2) {
+  background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/palette.svg");
+}
+
+.category-list .category:nth-of-type(7n + 3) {
+  background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/apple.svg");
+}
+
+.category-list .category:nth-of-type(7n + 4) {
+  background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/yellow_book.svg");
+}
+
+.category-list .category:nth-of-type(7n + 5) {
+  background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/atom.svg");
+}
+
+.category-list .category:nth-of-type(7n + 6) {
+  background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/hammer.svg");
+}
+
+.category-list .category:nth-of-type(7n + 7) {
+  background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/running_shoe.svg");
+}
+
+/* Special styling for Pocket Premium tile. The category number should correspond to its ID (category-854) on the production site. */
+#category-6,
+#category-854 {
+  background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/premium.svg");
+}
+
+/* Special styling for Getting Started tile. The category number should correspond to its ID (category-857) on the production site. */
+#category-4,
+#category-857 {
+  background-image: url("https://pocket-helpcenter.sumo.mozit.cloud/images/pocket_logo.svg");
+}
+
+/* Contact form */
+
+#contactModal h2,
+.abuse h2 {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+#contactModal textarea,
+#contactModal input,
+#contactForm textarea,
+#contactForm input {
+  border: var(--border-primary);
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.35em 0.5em !important;
+  font-family: Graphik Web, proxima-nova, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+#contactModal input,
+#contactForm input {
+  height: 36px !important; /* Help Scout overrides this otherwise because the form opens later */
+  width: 100% !important;
+}
+
+#contactForm #message {
+  width: 100%;
+}
+
+#contactModal input:focus,
+#contactForm input:focus,
+#contactModal input:hover,
+#contactForm input:hover,
+#contactModal textarea:focus,
+#contactForm textarea:focus,
+#contactModal textarea:hover,
+#contactForm textarea:hover {
+  border: 2px solid #505050;
+  box-shadow: none;
+  transition: none;
+}
+
+#contactModal .btn,
+#contactForm .btn {
+  border: none;
+  background: var(--brand-teal);
+  font-family: var(--graphik-web);
+  font-size: 16px;
+  color: white;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#contactModal .btn:hover,
+#contactForm .btn:hover {
+  background: var(--brand-teal-darker);
+}
+
+/* Sidebar */
+
+#sidebar .nav-list a {
+  color: var(--text-primary);
+  line-height: 24px;
+}
+
+#sidebar h3 {
+  text-transform: unset;
+  font-size: 18px;
+}
+
+/* Article */
+
+.contentWrapper {
+  border: var(--border-secondary);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 759px) {
+  .contentWrapper {
+    margin: 16px;
+    box-shadow: var(--shadow-raised-canvas);
+  }
+}
+
+.contentWrapper h1 {
+  font-weight: 600;
+}
+
+#main-content {
+  background: none;
+}
+
+#fullArticle p a,
+#fullArticle ul a {
+  text-decoration: underline;
+}
+
+.icon-article-doc {
+  content: url("https://pocket-helpcenter.sumo.mozit.cloud/images/icon_article.svg");
+  width: 16px;
+  padding-right: 12px;
+  opacity: 0.6;
+  top: 3px;
+  position: relative;
+}
+
+#categoryHead .sort select {
+  height: 36px;
+}
+
+#categoryHead h1 {
+  font-weight: 600;
+}
+
+#fullArticle .admin-edit {
+  background: var(--brand-teal);
+  text-shadow: none;
+  color: white;
+  border-color: var(--brand-teal);
+  font-size: 14px;
+  padding: 8px 16px;
+  box-shadow: none;
+  border: none;
+}
+
+.articleRatings {
+  box-shadow: none;
+}
+
+/* Footer */
+
+.articleFoot p,
+.articleFoot time {
+  font-family: var(--graphik);
+  font-style: normal;
+}
